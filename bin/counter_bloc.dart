@@ -8,5 +8,8 @@ enum CounterEvent{
 
 class CounterBloc extends Bloc<CounterEvent, int> {
 
+  @override
+  int get initialState => 0;
+
   
 }
