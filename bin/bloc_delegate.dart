@@ -7,4 +7,19 @@ class SimpleBlocDelegate extends BlocDelegate {
     super.onTransition(bloc, transition);
     print(transition);
   }
+
+
+   @override
+  void onEvent(Bloc bloc, Object event) {
+    super.onEvent(bloc, event);
+    print(event);
+  }
+
+ 
+
+  @override
+  void onError(Bloc bloc, Object error, StackTrace stacktrace) {
+    super.onError(bloc, error, stacktrace);
+    print('$error, $stacktrace');
+  }
 }
