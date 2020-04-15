@@ -23,5 +23,10 @@ class CounterBloc extends Bloc<CounterEvent, int> {
     }
   }
 
+  @override
+  void onTransition(Transition<CounterEvent, int> transition) {
+      print(transition);
+  }
+
   
 }
